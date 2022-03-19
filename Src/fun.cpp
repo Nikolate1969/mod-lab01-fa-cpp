@@ -3,17 +3,6 @@
 #include <ctype.h>
 #include <string>
 #include <cmath>
-using namespace std;
-unsigned int faStr1(const char*);
-unsigned int faStr2(const char*);
-unsigned int faStr3(const char*);
-
-int main()
-{
-	const char* s = "King Kong King lion";
-	cout << faStr3(s);
-}
-
 
 unsigned int faStr1(const char* str) {
 	int q = 0;
