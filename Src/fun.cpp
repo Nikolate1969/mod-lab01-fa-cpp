@@ -1,8 +1,10 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
+#include <cstring>
 #include <ctype.h>
 #include <string>
 #include <cmath>
+#include <stdio.h>
 
 unsigned int faStr1(const char* str) {
 	int q = 0;
