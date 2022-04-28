@@ -1,8 +1,7 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
 
-unsigned int faStr1(const char *str)
-{
+unsigned int faStr1(const char *str) {
     char a = str[0];
     int words_counter = 0;
     bool in_word = false;
@@ -14,14 +13,12 @@ unsigned int faStr1(const char *str)
             if (!in_word) {
                 in_word = true;
                 words_counter++;
-            }
-            else {
+            } else {
                 //inside word
                 if (str[i] >= '0' && str[i] <= '9') {
                     is_word_contains_numb = true;
                 }
             }
-            
         }
         //word ending
         if (str[i] == ' ' && in_word) {
@@ -34,8 +31,7 @@ unsigned int faStr1(const char *str)
     }
     return words_with_numb;
 }
-unsigned int faStr2(const char *str)
-{
+unsigned int faStr2(const char *str) {
     char a = str[0];
     int words_counter = 0;
     bool in_word = false;
@@ -51,13 +47,11 @@ unsigned int faStr2(const char *str)
                 }
                 in_word = true;
                 words_counter++;
-            }
-            else {
+            } else {
                 if (str[i] <= 'a' || str[i] >= 'z') {
                     second_switcher = true;
                 }
             }
-
         }
         //word ending
         if (str[i] == ' ' && in_word) {
@@ -71,8 +65,7 @@ unsigned int faStr2(const char *str)
     }
     return searched_words_counter;
 }
-unsigned int faStr3(const char *str)
-{
+unsigned int faStr3(const char *str) {
     char a = str[0];
     int words_counter = 0;
     bool in_word = false;
@@ -85,7 +78,6 @@ unsigned int faStr3(const char *str)
                 words_counter++;
             }
             sum_word_symbols++;
-
         }
         //word ending
         if (str[i] == ' ' && in_word) {
